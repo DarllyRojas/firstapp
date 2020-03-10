@@ -1,5 +1,7 @@
 {% extends "myfirstapp/base.html" %}
+{% load staticfiles %}
 {% load tethys_gizmos %}
+{% load static %}
 
 {% block header_buttons %}
   <div class="header-button glyphicon-button" data-toggle="tooltip" data-placement="bottom" title="Help">
@@ -9,9 +11,14 @@
 
 {% block app_content %}
   <h1>Hi I am Darlly Rojas </h1>
+  <video width="320" height="240" controls>
+      <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+      <source src="{% static 'myfirstapp/images/VID-20200310-WA0004.mp4' %}" type=video/mp4>
+  </video>
+  <br>
   <p>I am from Colombia, I was Agricultural Engineer, but  In United States I am housewife</p>
   <h2>My son Antonio</h2>
-  <p>He is a good boy, He never is calm, He hates Tethys and the computers because they steal his mother. </p>
+  <p>He is a good boy, He is never calm, He hates Tethys and the computers because they steal his mother. </p>
   <h2>My husband Jorge Luis</h2>
   <p>He is doing a PhD in Civil Engineer, He likes to eat. </p>
   <!-- <h3>Heading 3</h3>
@@ -45,9 +52,4 @@
 {% endblock %}
 
 {% block app_actions %}
-  {% gizmo save_button %}
-  {% gizmo edit_button %}
-  {% gizmo remove_button %}
-  {% gizmo previous_button %}
-  {% gizmo next_button %}
 {% endblock %}

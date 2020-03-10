@@ -29,6 +29,11 @@ class Myfirstapp(TethysAppBase):
                 url='myfirstapp',
                 controller='myfirstapp.controllers.home'
             ),
+            UrlMap(
+                name='map',
+                url='myfirstapp/map',
+                controller='myfirstapp.controllers.map'
+            ),
         )
 
         return url_maps
