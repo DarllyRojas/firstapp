@@ -8,10 +8,10 @@ class Myfirstapp(TethysAppBase):
 
     name = 'Myfirstapp'
     index = 'myfirstapp:home'
-    icon = 'myfirstapp/images/icon.gif'
+    icon = 'myfirstapp/images/Logo_Darlly_v1.png'
     package = 'myfirstapp'
     root_url = 'myfirstapp'
-    color = '#c0392b'
+    color = '#042EC6'
     description = ''
     tags = ''
     enable_feedback = False

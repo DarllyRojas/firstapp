@@ -49,7 +49,7 @@
     }).addTo(mymap);
 
     var blueIcon = L.icon({
-    iconUrl: 'icon.jpg',
+    iconUrl: "{% static 'myfirstapp/images/icon.jpg'%}",
 
     iconSize:     [30, 40], // size of the icon
     iconAnchor:   [15, 40], // point of the icon which will correspond to marker's location
@@ -59,23 +59,23 @@
 
     var marker = L.marker([5.354327, -72.402025], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>Iguana Park<br> Cravo Sur river</h2>' +
      '<p>Iguana Park was created to protect iguana and animals from extinction, however it is used by residents for drug use. </p>'+
-    '<img src = "{% static 'myfirstapp/images/Iguana.jpg' %}" width="300" height="200">');
+    '<img src = "{% static 'myfirstapp/images/Iguana.JPG' %}" width="300" height="200">');
 
      var marker = L.marker([5.318445, -72.396556], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>My home<br> - El Fical -</h2>' +
      '<p>In this house I lived since my brother broke a leg in school.  </p>'+
-    '<img src = "{% static 'myfirstapp/images/Home.jpg'  %}" width="300" height="200">');
+    '<img src = "{% static 'myfirstapp/images/Home.JPG'  %}" width="300" height="200">');
 
     var marker = L.marker([5.321298, -72.397461], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>My School</h2>' +
      '<p>In this school I did my high school. </p>'+
-    '<img src = "{% static 'myfirstapp/images/School.jpg' %}" width="300" height="200">');
+    '<img src = "{% static 'myfirstapp/images/School.JPG' %}" width="300" height="200">');
 
     var marker = L.marker([5.319746, -72.394321], {icon: blueIcon}).addTo(mymap).bindPopup('<h2>My Church<br> Iglesia Nuestra Señora Del Milagro</h2>' +
      '<p>It was originally a paddock. </p>'+
-    '<img src = "{% static 'myfirstapp/images/Church.jpg' %}" width="300" height="200">');
+    '<img src = "{% static 'myfirstapp/images/Church.JPG' %}" width="300" height="200">');
 
     var marker = L.marker([5.318583, -72.393137], {icon: blueIcon}).addTo(mymap).bindPopup('<h2> Stadium <br> Santiago De Las Atalayas De Yopal</h2>' +
      '<p>It is not the headquarters of professional teams, but it stands out for having received the Pumas de Casanare club for a year in the First B of Colombia. It used to be called Pierre Lora Muñoz. (Wikipedia) </p>'+
-    '<img src = "{% static 'myfirstapp/images/Stadium.jpg' %}" width="300" height="200">');
+    '<img src = "{% static 'myfirstapp/images/Stadium.JPG' %}" width="300" height="200">');
 
 
     var marker = L.marker([5.333735, -72.394606]).addTo(mymap).bindPopup('<h2>El Yopal</h2>' +

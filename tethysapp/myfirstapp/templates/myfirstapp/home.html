@@ -10,17 +10,22 @@
 {% endblock %}
 
 {% block app_content %}
-  <h1>Hi I am Darlly Rojas </h1>
-  <video width="320" height="240" controls>
-      <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-      <source src="{% static 'myfirstapp/images/VID-20200310-WA0004.mp4' %}" type=video/mp4>
+  <h1>Hi, I am Darlly Rojas! </h1>
+  <video width="480" height="580" autoplay loop controls id="vid">
+    <source src="{% static 'myfirstapp/images/family.mp4' %}" type="video/mp4" />
+    <source src="{% static 'myfirstapp/images/family.ogg' %}" type="video/ogg" />
+    Your browser does not support the video tag.
   </video>
+  <script>
+    document.getElementById('vid').play();
+  </script>
   <br>
-  <p>I am from Colombia, I was Agricultural Engineer, but  In United States I am housewife</p>
+  <br>
+  <p>I am from Colombia, I am Agricultural Engineer. However, in the United States I am housewife, and now I am trying to become a grad student</p>
   <h2>My son Antonio</h2>
   <p>He is a good boy, He is never calm, He hates Tethys and the computers because they steal his mother. </p>
   <h2>My husband Jorge Luis</h2>
-  <p>He is doing a PhD in Civil Engineer, He likes to eat. </p>
+  <p>He is a PhD student in Civil Engineering. He likes to eat. </p>
   <!-- <h3>Heading 3</h3>
   <h4>Heading 4</h4>
   <h5>Heading 5</h5>
